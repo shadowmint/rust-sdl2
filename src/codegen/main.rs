@@ -23,14 +23,11 @@ fn main() {
             let output_dir = GenericPath::new(args[2].clone());
             // TODO: maybe not 0777?
             mkdir_recursive(&output_dir, 0b111_111_111);
-
-            match args[1] {
-                ~"keycode.rs" => keycode::generate(&output_dir),
-                ~"scancode.rs" => scancode::generate(&output_dir),
-                s => {
-                    println!("unknown thing-to-generate '{}'", s);
-                    os::set_exit_status(1);
-                }
+            if (args[1] == ~"keycode.rs") {
+                keycode::generate(&output_dir);
+            }
+            else if (args[1] == ~"scancode.rs") {
+                scancode::generate(&output_dir);
             }
         },
         _ => {
