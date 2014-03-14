@@ -5,7 +5,7 @@
 #[license = "MIT"];
 
 #[feature(globs)];
-
+#[feature(macro_rules)];
 extern crate collections;
 
 pub use sdl::*;
@@ -14,6 +14,7 @@ pub mod keycode;
 #[path = "generated/scancode.rs"]
 pub mod scancode;
 
+pub mod link;
 pub mod event;
 pub mod gesture;
 pub mod touch;
