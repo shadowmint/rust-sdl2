@@ -4,7 +4,7 @@ use std::cast;
 use std::str;
 use link;
 
-import_sdl_link_dependencies!()
+import_sdl_dependencies!()
 
 #[allow(non_camel_case_types)]
 pub mod ll {

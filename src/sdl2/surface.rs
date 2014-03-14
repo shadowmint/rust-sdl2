@@ -1,6 +1,6 @@
 use std::cast;
 use rect::Rect;
-use get_error;
+use sdl::get_error;
 use std::ptr;
 use std::libc::c_int;
 use pixels;

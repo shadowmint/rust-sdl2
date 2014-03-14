@@ -8,7 +8,6 @@
 #[feature(macro_rules)];
 extern crate collections;
 
-pub use sdl::*;
 #[path = "generated/keycode.rs"]
 pub mod keycode;
 #[path = "generated/scancode.rs"]

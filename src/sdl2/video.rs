@@ -9,7 +9,7 @@ use surface::Surface;
 use pixels;
 use std::num::FromPrimitive;
 
-use get_error;
+use sdl::get_error;
 
 #[allow(non_camel_case_types)]
 pub mod ll {

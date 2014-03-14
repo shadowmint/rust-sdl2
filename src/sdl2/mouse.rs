@@ -1,6 +1,6 @@
 use std::ptr;
 
-use get_error;
+use sdl::get_error;
 use surface;
 use video;
 

@@ -4,7 +4,7 @@ use std::cast;
 use std::str;
 
 #[macro_export]
-macro_rules! sdl_link_dependencies(
+macro_rules! import_sdl_dependencies(
   () => (
     // Setup linking for all targets.
     #[cfg(target_os="macos")]

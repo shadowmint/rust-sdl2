@@ -1,7 +1,7 @@
 use video;
 use surface;
 use pixels;
-use get_error;
+use sdl::get_error;
 use std::ptr;
 use std::libc::{c_int, uint32_t, c_float, c_double};
 use std::str;
