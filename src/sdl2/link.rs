@@ -1,8 +1,5 @@
 #[macro_escape];
 
-use std::cast;
-use std::str;
-
 #[macro_export]
 macro_rules! import_sdl_dependencies(
   () => (
